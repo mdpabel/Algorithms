@@ -1,0 +1,26 @@
+{
+  "name": "Algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist",
+    "restart": "rimraf dist && npm run start",
+    "dev": "nodemon --exec npm run restart",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
