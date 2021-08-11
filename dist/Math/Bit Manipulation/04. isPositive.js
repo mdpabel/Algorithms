@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = isPositive;
+
+function isPositive(n) {
+  if (n === 0) {
+    return false;
+  }
+
+  return (n >> 31 & 1) === 0;
+} // console.log(isPositive(-13));
